@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dans Travel Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <header>
+        <div class="topnav">
+            <div>
+                <a class="brand" href="travel_recommendation.html">Dans Travel Recommendations</a>
+            </div>
+            <a class="active" href="travel_recommendation.html">Home</a>
+            <a href="travel_recommendation_about.html">About Us</a>
+            <a href="travel_recommendation_contact.html">Contact Us</a>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or comments, please don't hesitate to reach out to us. You can contact us through the following methods:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@danstravelrecommendations.com">info@danstravelrecommendations.com</a></li>
+                <li>Phone: +123 456 7890</li>
+                <li>Address: 123 Travel St, Wanderlust City, Adventureland</li>
+            </ul>
+            <p>We look forward to hearing from you!</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form  method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
