@@ -160,3 +160,124 @@ main {
   .contact button:hover {
     background-color: #d8d84e;
   }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.card-btn {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: #218838;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 800px; /* Adjust based on your design */
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 600px; /* Adjust height based on your design */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+.item {
+  width: calc(50% - 20px); /* Adjust to display two items side by side */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item h3 {
+  margin: 0;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.item p {
+  padding: 0 10px 10px 10px;
+}
+
+.item .visit-btn {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.scroll-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.scroll-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.scroll-btn:hover {
+    background-color: #45a049;
+}
