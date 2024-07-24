@@ -214,28 +214,32 @@ main {
 
 .content-container {
   width: 100%;
-  max-width: 800px; /* Adjust based on your design */
+  max-width: 600px; /* Adjust based on your design */
   margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 600px; /* Adjust height based on your design */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  height: 700px; /* Adjust height based on your design to fit two items */
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column; /* Set direction to column */
+}git init
+
+.content-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Set direction to column */
   gap: 20px;
-  padding: 10px;
 }
 
 .item {
-  width: calc(50% - 20px); /* Adjust to display two items side by side */
+  width: 100%; /* Ensure each item takes the full width of the container */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  background-color: #f4f4f4;
+  padding: 10px 10px 10px 10px;
 }
 
 .item img {
@@ -255,6 +259,7 @@ main {
 
 .item .visit-btn {
   display: block;
+  width: 40px;
   padding: 10px;
   text-align: center;
   background-color: #4CAF50;
@@ -263,21 +268,4 @@ main {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.scroll-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-}
 
-.scroll-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.scroll-btn:hover {
-    background-color: #45a049;
-}
